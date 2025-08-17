@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NyX Learn — E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="nav">
+    <div class="nav__brand">
+      <img src="NyXora.png" alt="NyX logo" class="nav__logo" />
+      <span class="nav__title">NyXora learns</span>
+    </div>
+
+    <nav class="nav__links" aria-label="Main">
+      <a href="#courses">Courses</a>
+      <a href="#paths">Learning Paths</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--ghost" href="#">Sign in</a>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Hero / Search -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <h1>Level up your skills, one lesson at a time.</h1>
+      <p class="hero__sub">Bite-sized lessons, hands-on projects, and certificates trusted by industry.</p>
+
+      <form class="search" role="search" aria-label="Search courses">
+        <input type="search" placeholder="Search for courses, topics, or instructors…" aria-label="Search input" />
+        <button type="submit" class="btn">Search</button>
+      </form>
+
+      <div class="chips" role="list" aria-label="Popular categories">
+        <a role="listitem" class="chip" href="#courses">Web Dev</a>
+        <a role="listitem" class="chip" href="#courses">Data Science</a>
+        <a role="listitem" class="chip" href="#courses">AI & ML</a>
+        <a role="listitem" class="chip" href="#courses">UI/UX</a>
+        <a role="listitem" class="chip" href="#courses">Cloud</a>
+      </div>
+    </div>
+    <div class="hero__art" aria-hidden="true"></div>
+  </section>
+
+  <!-- Metrics / Social proof -->
+  <section class="metrics">
+    <div class="metric"><strong>1,200+</strong><span>Video Lessons</span></div>
+    <div class="metric"><strong>95%</strong><span>Learner Satisfaction</span></div>
+    <div class="metric"><strong>150k+</strong><span>Students</span></div>
+    <div class="metric"><strong>120+</strong><span>Expert Instructors</span></div>
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="section" id="courses">
+    <div class="section__head">
+      <h2>Featured Courses</h2>
+      <a href="#" class="link">Browse all →</a>
+    </div>
+
+    <div class="grid grid--cards">
+      <!-- Course card -->
+      <article class="card">
+        <div class="card__thumb" style="--img:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop');"></div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="badge">Beginner</span>
+            <span class="dot"></span>
+            <span>4h 20m</span>
+          </div>
+          <h3 class="card__title">HTML, CSS & Responsive Web Design</h3>
+          <p class="card__desc">Craft beautiful, accessible pages that look great on any device.</p>
+          <div class="card__footer">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/40?img=32" alt="" />
+              <span>by Alex Carter</span>
+            </div>
+            <a href="#" class="btn btn--sm">Enroll</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb" style="--img:url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop');"></div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="badge badge--green">Intermediate</span>
+            <span class="dot"></span>
+            <span>6h 05m</span>
+          </div>
+          <h3 class="card__title">JavaScript Essentials & Projects</h3>
+          <p class="card__desc">Build interactive apps with modern ES features and tooling.</p>
+          <div class="card__footer">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/40?img=15" alt="" />
+              <span>by Priya Nair</span>
+            </div>
+            <a href="#" class="btn btn--sm">Enroll</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb" style="--img:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop');"></div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="badge badge--purple">Advanced</span>
+            <span class="dot"></span>
+            <span>8h 10m</span>
+          </div>
+          <h3 class="card__title">Machine Learning with Python</h3>
+          <p class="card__desc">From data prep to models: scikit-learn, Pandas, and real datasets.</p>
+          <div class="card__footer">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/40?img=5" alt="" />
+              <span>by Dr. Lin Zhao</span>
+            </div>
+            <a href="#" class="btn btn--sm">Enroll</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb" style="--img:url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1200&auto=format&fit=crop');"></div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="badge">Beginner</span>
+            <span class="dot"></span>
+            <span>3h 30m</span>
+          </div>
+          <h3 class="card__title">Figma for UI/UX Designers</h3>
+          <p class="card__desc">Design systems, prototypes, and handoff—like a pro.</p>
+          <div class="card__footer">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/40?img=23" alt="" />
+              <span>by Nina Patel</span>
+            </div>
+            <a href="#" class="btn btn--sm">Enroll</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Learning Path / Course Preview -->
+  <section class="path" id="paths" aria-labelledby="pathTitle">
+    <div class="path__copy">
+      <h2 id="pathTitle">Front-End Developer Path</h2>
+      <p>Follow a guided sequence of courses, projects, and quizzes. Earn a certificate to showcase on your resume and LinkedIn.</p>
+      <ul class="list">
+        <li>Semantic HTML & Accessible CSS</li>
+        <li>JavaScript Fundamentals → Async & APIs</li>
+        <li>React Basics → State, Hooks & Routing</li>
+        <li>Capstone Project & Portfolio Review</li>
+      </ul>
+      <a href="#" class="btn">Start Path</a>
+    </div>
+    <div class="path__card">
+      <div class="progress">
+        <span>Progress</span>
+        <div class="bar"><i style="--p:62%"></i></div>
+        <small>6 of 10 modules completed</small>
+      </div>
+      <div class="checklist">
+        <label><input type="checkbox" checked disabled /> HTML Foundations</label>
+        <label><input type="checkbox" checked disabled /> Flexbox & Grid</label>
+        <label><input type="checkbox" checked disabled /> JS Basics</label>
+        <label><input type="checkbox" disabled /> DOM & Events</label>
+        <label><input type="checkbox" disabled /> Async & APIs</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="section__head">
+      <h2>What learners say</h2>
+    </div>
+    <div class="grid grid--testimonials">
+      <figure class="tcard">
+        <blockquote>“Crystal-clear lessons and projects that actually helped me land my first dev role.”</blockquote>
+        <figcaption><img src="https://i.pravatar.cc/40?img=41" alt="" /> — Rohan S.</figcaption>
+      </figure>
+      <figure class="tcard">
+        <blockquote>“The ML track is practical and fast-paced. Loved the real datasets and quizzes.”</blockquote>
+        <figcaption><img src="https://i.pravatar.cc/40?img=19" alt="" /> — Ayesha K.</figcaption>
+      </figure>
+      <figure class="tcard">
+        <blockquote>“Figma course was a game changer for my freelance portfolio. Highly recommend.”</blockquote>
+        <figcaption><img src="https://i.pravatar.cc/40?img=8" alt="" /> — Marco L.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Pricing teaser -->
+  <section class="pricing" id="pricing" aria-labelledby="pricingTitle">
+    <h2 id="pricingTitle">Simple, transparent pricing</h2>
+    <div class="grid grid--pricing">
+      <div class="pcard">
+        <h3>Free</h3>
+        <p class="price">₹0</p>
+        <ul>
+          <li>10 starter courses</li>
+          <li>Community support</li>
+          <li>Limited quizzes</li>
+        </ul>
+        <a href="#" class="btn btn--ghost">Try Free</a>
+      </div>
+      <div class="pcard pcard--pro">
+        <div class="ribbon">Most Popular</div>
+        <h3>Pro</h3>
+        <p class="price">₹499 / mo</p>
+        <ul>
+          <li>All courses & paths</li>
+          <li>Certificates</li>
+          <li>Projects & reviews</li>
+          <li>Download videos</li>
+        </ul>
+        <a href="#" class="btn">Go Pro</a>
+      </div>
+      <div class="pcard">
+        <h3>Teams</h3>
+        <p class="price">Custom</p>
+        <ul>
+          <li>Admin & reporting</li>
+          <li>Dedicated support</li>
+          <li>SSO & LMS sync</li>
+        </ul>
+        <a href="#" class="btn btn--ghost">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>Do I get a certificate?</summary>
+      <p>Yes—complete a course or path and you’ll receive a shareable certificate.</p>
+    </details>
+    <details>
+      <summary>Can I learn on mobile?</summary>
+      <p>Absolutely. The site is fully responsive and supports offline downloads on Pro.</p>
+    </details>
+    <details>
+      <summary>What if I’m a beginner?</summary>
+      <p>We have beginner-friendly tracks with hands-on projects and mentor guidance.</p>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <div class="nav__brand">
+          <img src="NyXora.png" alt="NyX logo" class="nav__logo" />
+          <span class="nav__title">NyXora Learns</span>
+        </div>
+        <p class="muted">Learning that sticks. Anywhere, anytime.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#courses">Courses</a>
+        <a href="#paths">Paths</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Help Center</a>
+        <a href="#">Guides</a>
+      </div>
+    </div>
+    <p class="footer__copy">© 2025 NyXora learns. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
